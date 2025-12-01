@@ -8,14 +8,30 @@
   </head>
   <body>
     <header>
+      <div class="logo">
+        <a href="index.html">
+<img src="images/go-kart-logo.jpeg" alt="Idaho Velocity Karting Logo" />
+        </a>
+        
+      </div>
       <nav>
-        <a href="/index.html">Home</a>
+        <a href="index.html">Home</a>
         <a href="#">Leaderboard</a>
-        <a href="#">Sign-up</a>
+        <a href="sign-up.html">Sign-up</a>
       </nav>
     </header>
     <main>
-
+      
+      <form id="signup-forum">
+        <h1>Sign-up</h1>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <button type="submit" >Sign-up</button>
+      </form>
     </main>
     <footer>© 2025 Idaho Velocity Karting — All Rights Reserved</footer>
   </body>
