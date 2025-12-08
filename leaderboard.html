@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idaho Velocity Karting</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header nav a {
+            color: white;
+            margin-right: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        header {
+            background-color: rgb(150, 0, 0);
+            padding: 10px 20px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        header nav {
+            display: flex;
+            gap: 40px;
+            margin: 0 auto;
+        }
+
+
+        .logo img {
+            height: 90px;
+            width: auto;
+        }
+
+        .introduction{
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        .hero-leaderboard {
+            height: 70vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px black;
+            background-image: url('images/leaderboard-hero.png');
+        }
+
+        .purpose {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            background-color: rgb(150, 0, 0);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+
+        #leaderboard-table {
+            margin: 30px auto;
+            width: 600px;
+            border-collapse: collapse;
+            background-color: #111;
+            color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        }
+    
+        #leaderboard-table thead {
+            background-color: rgb(150, 0, 0);
+            font-size: 1.1rem;
+        }
+
+        #leaderboard-table th {
+            padding: 14px;
+            text-align: left;
+            letter-spacing: 0.5px;
+        }
+
+        #leaderboard-table td {
+            padding: 12px 14px;
+            border-bottom: 1px solid #222;
+        }
+        /* Top 3 styling */
+        #leaderboard-table tbody tr:nth-child(1) {
+            background-color: #2a1f00;
+            color: gold;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/go-kart-logo.jpeg" alt="Idaho Velocity Karting Logo">
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Leaderboard</a>
+            <a href="sign-up.html">Sign-up</a>
+            <a href="client_report.html">Client Report</a>
+        </nav>
+    </header>
+
+    <div class="introduction">
+        <p>Welcome to Idaho Velocity Karting</p>
+        <section class="hero-leaderboard"></section>
+    </div>
+
+    <section class="purpose">
+        <p>
+            These are the fastest recorded lap times set on our indoor track.
+        </p>
+        
+        <h2>Track Records</h2>
+        <table id="leaderboard-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Time</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Jacob M.</td>
+                    <td>52.341s</td>
+                    <td>Jan 14, 2025</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jordan</td>
+                    <td>52.918s</td>
+                    <td>Feb 02, 2025</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Chris</td>
+                    <td>53.102s</td>
+                    <td>Feb 28, 2025</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Taylor</td>
+                    <td>53.447s</td>
+                    <td>Mar 05, 2025</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Sam</td>
+                    <td>53.892s</td>
+                    <td>Mar 18, 2025</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Logan</td>
+                    <td>54.130s</td>
+                    <td>Apr 01, 2025</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Ryan</td>
+                    <td>54.411s</td>
+                    <td>Apr 12, 2025</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Casey</td>
+                    <td>54.759s</td>
+                    <td>Apr 25, 2025</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Dylan</td>
+                    <td>55.042s</td>
+                    <td>May 03, 2025</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Evan</td>
+                    <td>55.388s</td>
+                    <td>May 11, 2025</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="track-info">
+            <p><strong>Track Length:</strong> 0.25 miles</p>
+            <p><strong>Kart Type:</strong> Electric Performance Karts</p>
+            <p><strong>Lap Timing:</strong> RFID Transponder System</p>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 Idaho Velocity Karting — All Rights Reserved
+    </footer>
+
+</body>
+</html>
